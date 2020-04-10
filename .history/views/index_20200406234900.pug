@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    title knowledgebase
+    link(rel='stylesheet' href='/bower_components/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet' href='/css/style.css')
+    link(rel='stylesheet' href='/css/style1.css')
+  body
+    form#login-form(action='')
+      h1 Welcome Back
+      .input-box
+        input(type='text')
+        span(data-placeholder='Username')
+      .input-box
+        input(type='password')
+        span(data-placeholder='Password')
+      label
+        input(type='checkbox', name='remember')
+        |  Remember me
+      button.login-btn(type='submit', href='/users/login') Login
+      .bottom-links
+        p
+          | Don’t have account? 
+          a(href='#') Sign up
+
+
+
+    .container
+      != messages('message', locals)
+      if errors
+        each error, i in errors
+          div(class="alert alert-danger") #{error.msg}
+
+    script(src='/bower_components/jquery/dist/jquery.js')
+    script(src='/bower_components/bootstrap/dist/js/bootstrap.js')
+    script(src='/js/main.js')
+
+

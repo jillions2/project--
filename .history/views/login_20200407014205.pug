@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  br
+  h1 Login
+  form(method='POST', action='/users/login')
+    #form-group
+      br
+      label Username:
+      input.form-control(name='username', type='text')
+    #form-group
+      label Password:
+      input.form-control(name='password', type='password')
+    br
+    input.btn.btn-primary(type='submit',value='Submit')
+    
+  form#login-form(action='')
+    h1 Welcome Back
+    .input-box
+      input(type='text')
+      span(data-placeholder='Username')
+    .input-box
+      input(type='password')
+      span(data-placeholder='Password')
+    label
+      input(type='checkbox', name='remember')
+      |  Remember me
+    button.login-btn(type='submit') Login
+    .bottom-links
+      p
+        | Don’t have account? 
+        a(href='#') Sign up

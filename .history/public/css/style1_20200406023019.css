@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+html,body{
+background-image: url('https://wallpaperplay.com/walls/full/6/4/b/62614.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Patua One', cursive;
+color: white;
+}
+
+.containerr {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    background:rgba(0, 0, 0, 0.43);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+

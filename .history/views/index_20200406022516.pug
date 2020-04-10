@@ -1,0 +1,41 @@
+doctype html
+html
+  head
+    title knowledgebase
+    link(rel='stylesheet' href='/bower_components/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet' href='/css/style.css')
+    link(rel='stylesheet' href='/css/style1.css')
+  body
+    .containerr
+      h2 Login Now
+      form(action='#', method='post')
+        .username
+          span.username Username:
+          input.name(type='text', name='name', placeholder='', required='')
+          .clear
+        .password-agileits
+          span.username Password:
+          input.password(type='password', name='password', placeholder='', required='')
+          .clear
+        .rem-for-agile
+          input.remember(type='checkbox', name='remember')
+          | Remember me
+          br
+          a(href='#') Forgot Password
+          br
+        .login-w3
+          input.login(type='submit', value='Login')
+        .clear
+              
+
+    .container
+      != messages('message', locals)
+      if errors
+        each error, i in errors
+          div(class="alert alert-danger") #{error.msg}
+
+    script(src='/bower_components/jquery/dist/jquery.js')
+    script(src='/bower_components/bootstrap/dist/js/bootstrap.js')
+    script(src='/js/main.js')
+
+

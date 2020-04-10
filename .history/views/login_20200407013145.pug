@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  br
+  form#login-form(action='')
+    h1 Login
+    form(method='POST', action='/users/login')
+      #form-group
+        input.form-control(name='username', type='text')
+        span(data-placeholder='Username')
+      #form-group
+        input.form-control(name='password', type='password')
+        span(data-placeholder='Password')
+      br
+      input.btn.login-btn(type='submit',value='Submit')

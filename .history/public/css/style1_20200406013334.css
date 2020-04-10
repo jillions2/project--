@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+background-image: url('https://wallpaperplay.com/walls/full/6/4/b/62614.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+color: white;
+}
+
